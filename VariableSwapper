@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class VariableSwapper {
+    public static void main(String[] args) {
+        // Create a Scanner object to read input from the user
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt the user to enter the values of two variables
+        System.out.print("Enter the value of variable A: ");
+        int a = scanner.nextInt();
+        System.out.print("Enter the value of variable B: ");
+        int b = scanner.nextInt();
+
+        // Print the values before swapping
+        System.out.println("Before swapping:");
+        System.out.println("A = " + a);
+        System.out.println("B = " + b);
+
+        // Swap the values of A and B
+        int temp = a;
+        a = b;
+        b = temp;
+
+        // Print the values after swapping
+        System.out.println("After swapping:");
+        System.out.println("A = " + a);
+        System.out.println("B = " + b);
+
+        // Close the Scanner to release resources
+        scanner.close();
+    }
+}
